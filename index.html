@@ -10,7 +10,7 @@
 <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
 <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,28 +21,67 @@
     <title>Trivia Game</title>
 
     <div class="header">
-        <div class="container-fluid" id="header">Trivia Game
+        <div class="container-fluid" id="header">Modern Art Trivia Game
         </div>
     </div>
 
     <div class="container-fluid" id="instructions">
         <div class="row justify-content-md-center">
-            <div class="col-2">
-            </div>
+            <h1>Counter</h1> 
+                <div id="clockdiv"> 
+                    <span class="seconds" id="seconds">
+                        Seconds
+                    </span> 
+                </div>            
             <div class="col-8">
-                instructions
+                Click 'Start' to begin.
+                Choose one answer per question before the time runs out.
             </div>
             <div class="col-2">
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid" id="totalScore">
+    <div class="container-fluid" id="start">
+            <div class="row justify-content-md-center">
+                <div class="col" >
+                </div>
+                <div class="col" id="startButton">
+                    <input type="image" id="startButton" src="assets/images/startButton.jpeg"/>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </div>
+
+    <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-lg">
-                Total Score:
             </div>
-            <div class="col-lg" id="scoreNumber">
+            <div class="col-lg" id="questions">
+                <!-- <p>Q1</p>
+                <p>Answers1</p>
+                <p>Q2</p>
+                <p>Answers2</p>
+                <p>Q3</p>
+                <p>Answers3</p>
+                <p>Q4</p>
+                <p>Answers4</p>
+                <p>Q5</p>
+                <p>Answers5</p>
+                <p>Q6</p>
+                <p>Answers6</p>
+                <p>Q7</p>
+                <p>Answers7</p>
+                <p>Q8</p>
+                <p>Answer8</p>
+                <p>Q9</p>
+                <p>Answers9</p>
+                <p>Q10</p>
+                <p>Answers10</p>
+                <p>Q11</p>
+                <p>Answers11</p>
+                <p>Q12</p>
+                <p>Answers12</p> -->
             </div>
             <div class="col-lg">
             </div>
