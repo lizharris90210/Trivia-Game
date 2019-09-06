@@ -2,34 +2,48 @@
 $(document).ready(function(){
     
  
-
+// click to start button, this and instructions disappears when clicked
 $("#startButton").click = function startButton(){
+    // starts questions
+    // starts timer for each question
+
+// Timer count down
+function startTimer(duration, display) {
+    var timer = duration, seconds;
+    interval(function () {
+        seconds = interval(timer % 60, 10);
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
 }
 
-var x = setInterval(function() {
-    var timer = seconds.length;
-    var seconds = Math.floor((t % (1000 * 60)) / 1000);
-    $("#second").innerHTML = seconds;
-        if (timer < 0) {
-            clearInterval (x);
-            $("#second").innerHTML = '0';
-            alert("Time's Up!");
-        }})
-// variables
+function countDown() {
+    var thirtySeconds = 30000,
+        display = $('#seconds');
+    startTimer(thirtySeconds, display);
+};}
+// One question per page at a time. When answered, show correct or wrong and move to next question.
+// When timer runs out, page automatically goes to next question unless out of questions, then to End Page with stats
+    // variables
 // var questions = [
-//     {prompt: "Who is the famous artist who created this masterpeice? /n a) Pablo Picasso /n b) Indiana Jones /n c) Frida Kahlo /n d) Vladimir Boronstikov",
+//     {prompt: "Who is the famous artist who created this masterpeice? a) Pablo Picasso b) Indiana Jones c) Frida Kahlo d) Vladimir Boronstikov",
 //      answer: "a"},
 
 // ];
-var score = 0;
+// var score = 0;
 
-for (var i = 0; i < questions.length; i++) {
-    var userAnswer = window.prompt(questions [i].prompt);
-    if (userAnswer == questions[i].answer); {
-        score++;
-    }
+// for (var i = 0; i < questions.length; i++) {
+//     var userAnswer = window.prompt(questions [i].prompt);
+//     if (userAnswer == questions[i].answer); {
+//         score++;
+//     }
     
-}
+// }
+// End page with stats
 // "Done!"
 // correct:
 // wrong:
