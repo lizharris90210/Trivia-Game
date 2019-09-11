@@ -2,35 +2,31 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    </meta>
+    <meta charset="utf-8" name="viewport" content="width=device-width"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-<!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet"/>
 <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        
+    <title>Trivia Game</title>
 </head>
 
 <body>
-    <title>Trivia Game</title>
+    
 
     <div class="header">
-        <div class="container-fluid" id="header">Modern Art Trivia Game
-        </div>
+        <div class="container-fluid" id="header">Modern Art Trivia Game</div>
     </div>
 
     <div class="container-fluid">
         <div class="row justify-content-md-center">
             <div class= "col" id="timer"> 
                     Time Left:
-                <div class="seconds" id="seconds">
-                </div> 
+                <div class="seconds" id="seconds"></div> 
             </div>    
         </div>  
     </div>   
@@ -41,7 +37,7 @@
                 <h3>Click 'Start' to begin. Choose one answer per question before the time runs out.</h3> 
             </div>    
         </div>
-    </div>
+    </div> 
 
     <div class="container-fluid" id="start">
         <div class="row justify-content-md-center">
@@ -53,29 +49,20 @@
 
     <div class="container-fluid">
         <div class="row align-items-center" id="questions">
-                <label class="container">One
-                    <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                </label>
-                          
-                <label class="container">Two
-                    <input type="checkbox">
-                        <span class="checkmark"></span>
-                </label>
-                          
-                <label class="container">Three
-                    <input type="checkbox">
-                        <span class="checkmark"></span>
-                </label>
-                          
-                <label class="container">Four
-                    <input type="checkbox">
-                        <span class="checkmark"></span>
-                </label>
+            <div id = "question"></div>
+            <div id = "answer1"></div>
+            <div id = "answer2"></div>
+            <div id = "answer3"></div>
+            <div id = "answer4"></div>
         </div>
     </div>
-<script src="assets/javascript/app.js" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-</script>
-</body>
 
+    <div class = "container-fluid">
+        <div class= "row align-items-center" id="score">Score</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"> </script>
+
+</body>
 </html>
