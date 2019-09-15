@@ -24,9 +24,10 @@
 
     <div class="container-fluid">
         <div class="row justify-content-md-center">
-            <div class= "col" id="timer"> 
-                    Time Left:
-                <div class="seconds" id="seconds"></div> 
+            <div class= "col"> 
+                        Time Left:
+                    <div class= "timer" id="minutes"></div>
+                <div class="timer" id="seconds"></div> 
             </div>    
         </div>  
     </div>   
@@ -48,39 +49,33 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row align-items-center" id="questions">
-            <div id = "question"></div>
-            <div id = "answer1"></div>
-            <div id = "answer2"></div>
-            <div id = "answer3"></div>
-            <div id = "answer4"></div>
+        <div class="row align-items-center">
+            <div class="quizContainer" id="questions">
+                <div id = "question"></div>
+                <div id = "answers"></div>
+            </div>
         </div>
     </div>
 
-    <div class = "container-fluid">
-        <div class="row justify-content-md-center" id="score">Score</div>
-    </div>
-
-    <div class= "container-fluid" id= "footer">Question Number
+    <div class= "container-fluid" id= "results">
         <div class="row justify-content-md-center">
-            <nav aria-label="pageNav">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">6</a></li>
-                    <li class="page-item"><a class="page-link" href="#">7</a></li>
-                    <li class="page-item"><a class="page-link" href="#">8</a></li>
-                    <li class="page-item"><a class="page-link" href="#">9</a></li>
-                    <li class="page-item"><a class="page-link" href="#">10</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                </ul>
-            </nav>
+            <div class="col-lg">
+               Results: 
+            </div>
         </div>
     </div>
+
+    <div class= "container-fluid">
+        <div class="row justify-content-md-center">
+            <div class="col-lg">
+                <button type="button" class="btn btn-light btn-lg" id="submit">Submit Answer</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"> </script>
 
