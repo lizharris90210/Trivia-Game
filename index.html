@@ -16,12 +16,10 @@
 </head>
 
 <body>
-    
-
-    <div class="header">
-        <div class="container-fluid" id="header">Modern Art Trivia Game</div>
-    </div>
-
+        <div class="header">
+                <div class="container-fluid" id="header">Modern Art Trivia Game</div>
+            </div>
+            
     <div class="container-fluid">
         <div class="row justify-content-md-center">
             <div class= "col"> 
@@ -31,14 +29,13 @@
             </div>    
         </div>  
     </div>   
-    
     <div class="container-fluid">
-        <div class="col" id="instructions">
-            <div class="row justify-content-md-center">
-                <h3>Click 'Start' to begin. Choose one answer per question before the time runs out.</h3> 
+            <div class="col" id="instructions">
+                <div class="row justify-content-md-center">
+                    <h3>Click 'Start' to begin. Choose one answer per question before the time runs out.</h3> 
+                </div>
             </div>    
-        </div>
-    </div> 
+    </div>
 
     <div class="container-fluid" id="start">
         <div class="row justify-content-md-center">
@@ -49,11 +46,21 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="quizContainer" id="questions">
-                <div id = "question"></div>
-                <div id = "answers"></div>
-            </div>
+        <div class="row align-items-center" id="quiz">
+                <div class="row align-items-center" id="questions">
+                        <div class="images">
+                            <img src="assets/images/Pablo-Picasso-Guernica.jpg" id="picasso">
+                            <img src="assets/images/Georgia-O’Keeffe-Black-Iris-III-1926.jpg" id="okeeffe">
+                            <img src="assets/images/Henri-Matisse-La-Danse-1910.jpg" id="matisse">
+                            <img src="assets/images/Kandinsky-Wassily-Composition-VII-1913.jpg" id="kandinsky">
+                            <img src="assets/images/Claude-Monet-Water-Lilies-Nympheas.1.jpg" id="monet">
+                            <img src="assets/images/Frida-Kahlo-The-Two-Fridas-1939.jpg" id="kahlo">
+                            <img src="assets/images/Andy-Warhol-Marilyn-Diptych.jpeg" id="warhol">
+                            <img src="assets/images/Salvador-Dali-The-Persistence-of-Memory-1931.jpg" id="dali">
+                            <img src="assets/images/jackson-pollock-number-18-1950_u-l-enpvb0.jpg" id="pollock"> 
+                            <img src="assets/images/Vincent-Van-Gogh-The-Starry-Night-De-sterrennacht.jpg" id="gogh">                         
+                        </div>      
+                </div>
         </div>
     </div>
 
@@ -68,13 +75,10 @@
     <div class= "container-fluid">
         <div class="row justify-content-md-center">
             <div class="col-lg">
-                <button type="button" class="btn btn-light btn-lg" id="submit">Submit Answer</button>
+                <button type="button" class="btn btn-light btn-lg" id="submitButton">Submit Answer</button>
             </div>
         </div>
     </div>
-
-    
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"> </script>
